@@ -23,11 +23,17 @@ export function FAQ() {
             answer: (
                 <div>
                     You can install the library via npm or yarn. Simply run:
-                    <CodeSnippet language={'html'} codeString={`<script src="https://cdn.jsdelivr.net/npm/copy-share/dist/copy-share.min.js"></script>`}/>
+                    <CodeSnippet language={'html'} codeString={`
+    <script type="module">
+        import { copyText } from 'https://cdn.jsdelivr.net/npm/copy-share/copyShare.min.js';
+        
+        document.getElementById('btn').onclick = () => {
+            copyText(document.getElementById('text').value);
+        };
+    </script>
+                    `}/>
                     or
                     <CodeSnippet language={'bash'} codeString={`npm install copy-share`}/>
-                    or
-                    <CodeSnippet language={'bash'} codeString={`yarn add copy-share`}/>
                 </div>
             )
         },
