@@ -79,7 +79,7 @@ export function Nav() {
         >
             {/* Menu icon */}
             {location.pathname === '/' ? 
-                <p className={`ml-2 hidden py-2 px-3 text-violet-400 font-bold ${isDark ? 'bg-gray-800' : 'bg-violet-100'} rounded-lg cursor-pointer max-lg:block`}>Docs</p> :
+                <p className={`ml-2 hidden py-2 px-3 text-violet-400 font-bold ${isDark ? 'bg-gray-800' : 'bg-violet-100'} rounded-lg cursor-pointer max-lg:block`}><Link to='/api-references'>Docs</Link></p> :
                 <span id='menu-bar' className={`fa-solid fa-bars cursor-pointer hidden text-[1.5rem] ${isDark ? 'text-white' : 'text-black'}  ml-2  p-4 rounded-full max-lg:block`}></span>
             }
             <nav 
