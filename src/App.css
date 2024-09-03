@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'CustomFont';
+  src:  url('/src/fonts/grapple.ttf') format('truetype'),
+        url('/src/fonts/grapple.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.raider {
+  font-family: 'myFont', sans-serif;
+}
+.grapple {
+  font-family: 'CustomFont', sans-serif;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+pre {
+  background-color: #112 !important;
+  width: 100% !important; 
+}
