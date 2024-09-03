@@ -32,7 +32,14 @@ const Installation = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Alternative: Include via HTML Script Tag</h3>
             <p className="mb-2">You can also include the library directly in your HTML file:</p>
-            <CodeSnippet language={'html'} codeString={`<script src="https://cdn.jsdelivr.net/npm/copyShare/dist/copyShare.min.js"></script>`}/>
+            <CodeSnippet language={'html'} codeString={`
+            <script type="module">
+                import { copyText } from 'https://cdn.jsdelivr.net/npm/copy-share@1.1.0/copyShare.min.js';
+                    document.getElementById('btn').onclick = () => {
+                        copyText(document.getElementById('text').value);
+                };
+            </script>
+`}/>
         </div>
     );
 };
