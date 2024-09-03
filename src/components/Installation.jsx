@@ -35,6 +35,7 @@ const Installation = () => {
             <CodeSnippet language={'html'} codeString={`
     <script type="module">
         import { copyText } from 'https://cdn.jsdelivr.net/npm/copy-share@1.1.0/copyShare.min.js';
+        
             document.getElementById('btn').onclick = () => {
                 copyText(document.getElementById('text').value);
         };
