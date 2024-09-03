@@ -14,9 +14,7 @@ const Installation = () => {
         <div className="mb-6">
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Step 1: Install the Library</h3>
             <p className="mb-2 ">Using npm:</p>
-            <CodeSnippet language={'bash'} codeString={'npm install copyShare'}/>
-            <p className="mb-2">Or with yarn:</p>
-            <CodeSnippet language={'bash'} codeString={'yarn add copyShare'}/>
+            <CodeSnippet language={'bash'} codeString={'npm install copy-share'}/>
         </div>
         <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Step 2: Import and Use the Component</h3>
