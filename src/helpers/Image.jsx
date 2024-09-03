@@ -1,6 +1,6 @@
 import { copyImage, copyHistory } from "copy-share";
 import { useRef, useEffect, useState } from "react";
-
+import image from '/src/assets/pic/Naruto-gathering.jpg';
 const Image = () => {
     const imageRef = useRef(null);
     
@@ -19,7 +19,7 @@ const Image = () => {
     return (
         <div className='w-full relative flex flex-col bg-white h-[320px] border rounded-lg shadow-md overflow-hidden'>
             <button onClick={handleCopy} className="fa-regular fa-copy absolute top-0 right-0 bg-gray-900 p-3 text-white" title="Copy"></button>
-            <img ref={imageRef} src="/src/assets/pic/Naruto-gathering.jpg" alt="picture" className='max-w-full object-cover w-full h-full' />
+            <img ref={imageRef} src={image} alt="picture" className='max-w-full object-cover w-full h-full' />
         </div>
     );
 };
