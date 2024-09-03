@@ -34,7 +34,7 @@ const Installation = () => {
             <p className="mb-2">You can also include the library directly in your HTML file:</p>
             <CodeSnippet language={'html'} codeString={`
     <script type="module">
-        import { copyText } from 'https://cdn.jsdelivr.net/npm/copy-share@1.1.0/copyShare.min.js';
+        import { copyText } from 'https://cdn.jsdelivr.net/npm/copy-share/copyShare.min.js';
         
             document.getElementById('btn').onclick = () => {
                 copyText(document.getElementById('text').value);
