@@ -1,5 +1,7 @@
 import { copyVideoUrl } from "copy-share";
 import { useRef } from "react";
+import video from '/src/assets/video/vseason2.mp4';
+
 const Video = () => {
     const videoRef = useRef(null);
     return (
@@ -13,7 +15,7 @@ const Video = () => {
                 <video 
                     ref={videoRef}
                     controls 
-                    src="/src/assets/video/vseason2.mp4" 
+                    src={video}
                     className="absolute inset-0 w-full h-full object-cover"
                 ></video>
             </div>
