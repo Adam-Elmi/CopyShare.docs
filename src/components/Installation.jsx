@@ -19,7 +19,7 @@ const Installation = () => {
         <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Step 2: Import and Use the Component</h3>
             <p className="mb-2">Import the component into your React project:</p>
-            <CodeSnippet codeString={'import { copyText } from "copyShare";'}/>
+            <CodeSnippet codeString={'import { copyText } from "copy-share";'}/>
             <p className="mb-2 mt-5">Then use it in your project:</p>
             <div id="showcase" className={`flex flex-col h-auto relative w-full justify-between items-center gap-4 max-md:flex-col max-md:w-full  px-4 py-5`}>
                     <Code title={'copyText'}>
