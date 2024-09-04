@@ -54,7 +54,7 @@ export function FAQ() {
         },
         {
             question: "How can I contribute to the library?",
-            answer: "We welcome contributions! Please check our [GitHub repository](#) for guidelines on contributing, reporting issues, or submitting feature requests."
+            answer: <CodeSnippet language={'markdown'} codeString={`We welcome contributions! Please check our [GitHub repository](https://github.com/Adam-Elmi/CopyShare.docs.git) for guidelines on contributing, reporting issues, or submitting feature requests`}/>
         },
     ];
 
