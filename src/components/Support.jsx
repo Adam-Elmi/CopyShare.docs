@@ -16,7 +16,7 @@ export function Support() {
                     <strong>Documentation:</strong> Visit our <Link to={'/api-references'} className="text-blue-500 hover:underline">official documentation</Link> for detailed guides and examples.
                 </li>
                 <li>
-                    <strong>GitHub Issues:</strong> Report any bugs or request new features on our <a href="#" className="text-blue-500 hover:underline">GitHub repository</a>.
+                    <strong>GitHub Issues:</strong> Report any bugs or request new features on our <a href="https://github.com/Adam-Elmi/CopyShare.git" className="text-blue-500 hover:underline">GitHub repository</a>.
                 </li>
                 <li>
                     <strong>Email Support:</strong> For direct assistance, email us at <a href="mailto:adamcade123@gmail.com" className="text-blue-500 hover:underline">adamcade123@gmail.com</a>.
