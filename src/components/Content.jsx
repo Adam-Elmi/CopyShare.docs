@@ -21,7 +21,7 @@ export function Content() {
             <CopyVideoUrl/>
             <CopyLink/>
             <CopyCode/>
-            <CopyHistory/>
+            <GetHistory/>
             <CopyClear/>
         </section>
     )
