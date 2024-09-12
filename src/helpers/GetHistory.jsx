@@ -31,7 +31,7 @@ export function GetHistory() {
                     <li key={id}>{text}</li>
                 ))}
             </ul>
-            <Note correct={'Using getHistory with other methods'} correctMessage={'Works as expected'}  incorrect={'Using getHistory itself'} incorrectMessage={'Will not work as expected'}/>
+            <Note correct={'Using getHistory with other methods'} correctMessage={'Works as expected'}  incorrect={'Using getHistory alone'} incorrectMessage={'Will not work as expected'}/>
             <hr className='border-[1.2px] mt-5 text-black'/>
         </div>
     )
