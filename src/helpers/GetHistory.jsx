@@ -5,7 +5,7 @@ import Note from './Note';
 
 export function CopyHistory() {
     return (
-        <div id='CopyHistory' className="flex flex-col gap-5 mb-5">
+        <div id='GetHistory' className="flex flex-col gap-5 mb-5">
             <h1 className="relative text-[2rem] font-bold text-blue-300"><span className="fa-solid fa-cube text-[1.6rem]"></span> {copyHistory_docs.method}</h1>
             <Code title={'copyHistory'}>
                 <CodeSnippet codeString={copyHistory_docs.syntax}/>
