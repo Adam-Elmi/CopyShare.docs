@@ -27,7 +27,7 @@ const sections = [
             "CopyVideoUrl",
             "CopyLink",
             "CopyCode",
-            "CopyHistory",
+            "getHistory",
             "CopyClear",
         ],
         icon: 'fa-solid fa-code',
@@ -76,7 +76,7 @@ const references = [
     { url: '/api-references', refName: 'copyVideoUrl', id: 'CopyVideoUrl' },
     { url: '/api-references', refName: 'copyLink', id: 'CopyLink' },
     { url: '/api-references', refName: 'copyCode', id: 'CopyCode' },
-    { url: '/api-references', refName: 'copyHistory', id: 'CopyHistory' },
+    { url: '/api-references', refName: 'getHistory', id: 'getHistory' },
     { url: '/api-references', refName: 'copyClear', id: 'CopyClear' },
     { url: '/help', refName: 'FAQ', id: 'FAQ' },
     { url: '/help', refName: 'Support', id: 'Support' },
@@ -197,22 +197,22 @@ const copyText_docs =
         ]
     };
     
-    const copyHistory_docs = {
-        method: 'copyHistory',
+    const getHistory_docs = {
+        method: 'getHistory',
         syntax: `// method indicates a copy method such copyText
-    method().then(() => copyHistory());
+    method().then(() => getHistory());
         `,
-        description: "The copyHistory method allows developers to retrieve and copy the history of previously copied items to the clipboard. It cannot be used standalone and must be used in conjunction with other copy methods like copyText.",
-        example1: `copyText('Hello World').then(() => copyHistory());`,
+        description: "The getHistory method allows developers to retrieve and copy the history of previously copied items to the clipboard. It cannot be used standalone and must be used in conjunction with other copy methods like copyText.",
+        example1: `copyText('Hello World').then(() => getHistory());`,
         Parameter: 'This method does not take any parameters. It copies the history of previously copied items to the clipboard.',
-        example2: `copyText(textValue).then(() => copyHistory());`,
+        example2: `copyText(textValue).then(() => getHistory());`,
         ex_descrip: 'In this example, after copying the text value, the history of previously copied items is copied to the clipboard.',
         practical_example: `
         const text = document.getElementById("text");
         const copyBtn = document.getElementById("copy-btn");
     
         copyBtn.addEventListener("click", () => {
-            copyText(text.value).then(() => copyHistory());
+            copyText(text.value).then(() => getHistory());
         });
         `,
         ex_descrip_2: [
@@ -233,7 +233,7 @@ const copyText_docs =
     
         clearBtn.addEventListener("click", () => {
             copyClear();
-            console.log("Copy history cleared:", copyHistory());
+            console.log("Copy history cleared:", getHistory());
         });
         `,
         ex_descrip_2: [
@@ -243,4 +243,4 @@ const copyText_docs =
     };
     
 
-export {sections, advantages, references, copyText_docs, copyImage_docs, copyVideoUrl_docs, copyLink_docs, copyCode_docs, copyHistory_docs, copyClear_docs};
+export {sections, advantages, references, copyText_docs, copyImage_docs, copyVideoUrl_docs, copyLink_docs, copyCode_docs, getHistory_docs, copyClear_docs};
