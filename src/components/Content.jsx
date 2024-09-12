@@ -4,7 +4,7 @@ import { CopyImage } from "../helpers/CopyImage";
 import { CopyVideoUrl } from "../helpers/CopyVideoUrl";
 import { CopyLink } from "../helpers/CopyLink";
 import { CopyCode } from "../helpers/CopyCode.jsx";
-import { CopyHistory } from "../helpers/CopyHistory";
+import { GetHistory } from "../helpers/GetHistory";
 import { CopyClear } from "../helpers/CopyClear.jsx";
 import { ThemeContext } from "../helpers/DarkMode.jsx";
 
