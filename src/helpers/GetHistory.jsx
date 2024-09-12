@@ -7,7 +7,7 @@ export function GetHistory() {
     return (
         <div id='GetHistory' className="flex flex-col gap-5 mb-5">
             <h1 className="relative text-[2rem] font-bold text-blue-300"><span className="fa-solid fa-cube text-[1.6rem]"></span> {getHistory_docs.method}</h1>
-            <Code title={'getHistory'}>
+            <Code title={'GetHistory'}>
                 <CodeSnippet codeString={getHistory_docs.syntax}/>
             </Code>
             <p className="leading-8 text-[1.1rem] bg-violet-100 text-black p-3 rounded-lg ">
