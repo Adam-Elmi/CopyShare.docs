@@ -155,9 +155,9 @@ const copyText_docs =
     
     const copyCode_docs = {
         method: 'copyCode',
-        syntax: 'copyCode(codeSnippet);',
+        syntax: 'copyCode(codeSnippet, language);',
         description: "The copyCode method allows developers to copy a specified code snippet to the clipboard. This method is useful for copying code examples or snippets for quick sharing.",
-        example1: `copyCode("const x = 10;");`,
+        example1: `copyCode("const x = 10;", 'javascript');`,
         Parameter: 'The code snippet that you want to copy to the clipboard. The code is copied in plain text format.',
         example2: `copyCode("function hello() { console.log('Hello, world!'); }");`,
         ex_descrip: 'In this example, the code snippet for a simple function will be copied to the clipboard.',
@@ -166,7 +166,7 @@ const copyText_docs =
         const btn = document.getElementById("copy-code-btn");
     
         btn.addEventListener('click', () => {
-            copyCode(codeSnippet);
+            copyCode(codeSnippet, 'javascript');
         });
         `,
         ex_descrip_2: [
