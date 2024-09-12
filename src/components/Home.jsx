@@ -102,14 +102,14 @@ export function Home() {
                     </div>                  
                 </div>
             </div>
-            {/* Copy History */}
+            {/* Get History */}
             <div className={`w-full flex flex-col justify-center items-center h-auto gap-5 py-10 px-4 ${isDark ? 'bg-slate-950' : 'bg-slate-100'}`}>
                 <p className="text-center text-[3rem] font-bold max-lg:text-[2rem]">Review Your Clipboard History from All Copy Methods</p>
-                <p className="leading-10 text-center text-[1.2rem]">The <span className={`${isDark ? "bg-gray-800" :"bg-violet-200"} mx-1 text-violet-400 py-1 px-3 rounded-lg font-bold`}>copyHistory</span> 
+                <p className="leading-10 text-center text-[1.2rem]">The <span className={`${isDark ? "bg-gray-800" :"bg-violet-200"} mx-1 text-violet-400 py-1 px-3 rounded-lg font-bold`}>getHistory</span> 
                 method logs and displays all the data you've copied using various methods like <span className={`${isDark ? "bg-gray-800" :"bg-slate-200"} mx-1 text-green-400 py-1 px-3 rounded-lg font-bold`}>copyText</span>, <span className={`${isDark ? "bg-gray-800" :"bg-slate-200"} mx-1 text-green-400 py-1 px-3 rounded-lg font-bold`}>copyImage</span>, <span className={`${isDark ? "bg-gray-800" :"bg-slate-200"} mx-1 text-green-400 py-1 px-3 rounded-lg font-bold`}>copyVideoUrl</span>, and others, offering a complete history of your clipboard activity.
                 </p>
                 <div id="showcase" className={`flex flex-wrap relative w-full justify-between items-center gap-4 max-md:flex-col max-md:w-full  px-4 py-5`}>
-                    <Code title={'copyHistory'}>
+                    <Code title={'getHistory'}>
                         <CodeSnippet codeString={code4}/>
                     </Code>  
                     <div className="w-full relative flex justify-center h-auto items-center leading-10 text-[1.2rem] max-md:w-full max-md:max-w-[100%]">
