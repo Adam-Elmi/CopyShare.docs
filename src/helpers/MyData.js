@@ -27,7 +27,7 @@ const sections = [
             "CopyVideoUrl",
             "CopyLink",
             "CopyCode",
-            "getHistory",
+            "GetHistory",
             "CopyClear",
         ],
         icon: 'fa-solid fa-code',
