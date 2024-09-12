@@ -76,7 +76,7 @@ const references = [
     { url: '/api-references', refName: 'copyVideoUrl', id: 'CopyVideoUrl' },
     { url: '/api-references', refName: 'copyLink', id: 'CopyLink' },
     { url: '/api-references', refName: 'copyCode', id: 'CopyCode' },
-    { url: '/api-references', refName: 'getHistory', id: 'getHistory' },
+    { url: '/api-references', refName: 'GetHistory', id: 'GetHistory' },
     { url: '/api-references', refName: 'copyClear', id: 'CopyClear' },
     { url: '/help', refName: 'FAQ', id: 'FAQ' },
     { url: '/help', refName: 'Support', id: 'Support' },
