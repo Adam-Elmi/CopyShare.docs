@@ -25,7 +25,7 @@ const code4 = `
 copyText("Hello, World!").then(() => getHistory());
 
 // Copy an image
-getHistory(imageElement.src).then(() => getHistory());
+copyImage(imageElement.src).then(() => getHistory());
 
 // Copy a video URL
 copyVideoUrl("https://example.com/video.mp4").then(() => getHistory());
