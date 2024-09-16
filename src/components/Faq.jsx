@@ -54,7 +54,7 @@ export function FAQ() {
         },
         {
             question: "How can I contribute to the library?",
-            answer: <p>We welcome contributions! Please check our <a href="https://github.com/Adam-Elmi/CopyShare.docs.git" className='text-blue-400' target='_blank'>GitHub repository</a> for guidelines on contributing, reporting issues, or submitting feature requests.</p>
+            answer: <p>We welcome contributions! Please check our <a href="https://github.com/Adam-Elmi/CopyShare.git" className='text-blue-400' target='_blank'>GitHub repository</a> for guidelines on contributing, reporting issues, or submitting feature requests.</p>
         },
     ];
 
