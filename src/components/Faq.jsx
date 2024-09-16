@@ -22,8 +22,11 @@ export function FAQ() {
             question: "How do I install the library?",
             answer: (
                 <div>
-                    You can install the library via npm or yarn. Simply run:
-                    <CodeSnippet language={'html'} codeString={`
+                    You can install the library via npm. Simply run:
+                   
+                    <CodeSnippet language={'bash'} codeString={`npm install copy-share`}/>
+                    or 
+                     <CodeSnippet language={'html'} codeString={`
     <script type="module">
         import { copyText } from 'https://cdn.jsdelivr.net/npm/copy-share/copyShare.min.js';
         
@@ -32,8 +35,6 @@ export function FAQ() {
         };
     </script>
                     `}/>
-                    or
-                    <CodeSnippet language={'bash'} codeString={`npm install copy-share`}/>
                 </div>
             )
         },
