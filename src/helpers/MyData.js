@@ -90,7 +90,7 @@ const copyText_docs =
     {
         method: 'copyText',
         syntax: 'copyText(text);',
-        description: "The copyText method allows developers to copy a specified text to the clipboard with a single function call. This method is designed to be simple and efficient, making it easy to copy non-sensitive text data like code snippets, URLs, or any other plain text content.",
+        description: "The copyText method allows developers to copy a specified text to the clipboard with a single function call.",
         example1: `copyText("Your text here");`,
         Parameter: 'The text that you want to copy to the clipboard. The text is automatically sanitized to prevent the injection of any harmful or unintended characters.',
         example2: `copyText("Hello, world!");`,
@@ -112,7 +112,7 @@ const copyText_docs =
     const copyImage_docs = {
         method: 'copyImage',
         syntax: 'copyImage(imageUrl);',
-        description: "The copyImage method allows developers to copy an image to the clipboard using its URL. This method supports image URLs and ensures that the image is copied as an image format.",
+        description: "The copyImage method allows you to copy an image to the clipboard using its URL. This method supports image URLs and ensures that the image is copied as an image format.",
         example1: `copyImage("https://example.com/image.jpg");`,
         Parameter: 'The URL of the image that you want to copy to the clipboard.',
         example2: `copyImage("https://example.com/sample.png");`,
@@ -134,7 +134,7 @@ const copyText_docs =
     const copyVideoUrl_docs = {
         method: 'copyVideoUrl',
         syntax: 'copyVideoUrl(videoUrl);',
-        description: "The copyVideoUrl method allows developers to copy a video URL to the clipboard. This method is ideal for sharing video links quickly.",
+        description: "The copyVideoUrl method allows you to copy a video URL to the clipboard. This method is ideal for sharing video links quickly.",
         example1: `copyVideoUrl("https://example.com/video.mp4");`,
         Parameter: 'The URL of the video that you want to copy to the clipboard.',
         example2: `copyVideoUrl("https://example.com/sample-video.mp4");`,
@@ -156,7 +156,7 @@ const copyText_docs =
     const copyCode_docs = {
         method: 'copyCode',
         syntax: 'copyCode(codeSnippet, language);',
-        description: "The copyCode method allows developers to copy a specified code snippet to the clipboard. This method is useful for copying code examples or snippets for quick sharing.",
+        description: "The copyCode method allows you to copy a specified code snippet to the clipboard. This method is useful for copying code examples or snippets for quick sharing.",
         example1: `copyCode("const x = 10;", 'javascript');`,
         Parameter: 'The code snippet that you want to copy to the clipboard. The code is copied in plain text format.',
         example2: `copyCode("function hello() { console.log('Hello, world!'); }");`,
@@ -178,7 +178,7 @@ const copyText_docs =
     const copyLink_docs = {
         method: 'copyLink',
         syntax: 'copyLink(linkUrl);',
-        description: "The copyLink method allows developers to copy a URL link to the clipboard. This method is useful for sharing web links quickly.",
+        description: "The copyLink method allows you to copy a URL link to the clipboard. This method is useful for sharing web links quickly.",
         example1: `copyLink("https://example.com");`,
         Parameter: 'The URL link that you want to copy to the clipboard.',
         example2: `copyLink("https://example.com/page");`,
@@ -202,7 +202,7 @@ const copyText_docs =
         syntax: `// method indicates a copy method such copyText
     method().then(() => getHistory());
         `,
-        description: "The getHistory method allows developers to retrieve and copy the history of previously copied items to the clipboard. It cannot be used standalone and must be used in conjunction with other copy methods like copyText.",
+        description: "The getHistory method allows you to retrieve and copy the history of previously copied items to the clipboard. It cannot be used standalone and must be used in conjunction with other copy methods like copyText.",
         example1: `copyText('Hello World').then(() => getHistory());`,
         Parameter: 'This method does not take any parameters. It copies the history of previously copied items to the clipboard.',
         example2: `copyText(textValue).then(() => getHistory());`,
