@@ -90,7 +90,7 @@ const copyText_docs =
     {
         method: 'copyText',
         syntax: 'copyText(text);',
-        description: "The copyText method allows developers to copy a specified text to the clipboard with a single function call.",
+        description: "The copyText method allows you to copy a specified text to the clipboard with a single function call.",
         example1: `copyText("Your text here");`,
         Parameter: 'The text that you want to copy to the clipboard. The text is automatically sanitized to prevent the injection of any harmful or unintended characters.',
         example2: `copyText("Hello, world!");`,
